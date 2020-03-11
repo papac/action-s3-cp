@@ -5,5 +5,5 @@ runs:
   using: docker
   image: Dockerfile
 branding:
-  icon: refresh-cw
+  icon: hard-drive
   color: green
