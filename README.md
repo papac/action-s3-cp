@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: qoqa/s3-cp-action@v1.0.0
+      - uses: qoqa/action-s3-cp@v1.0.0
         env:
           AWS_S3_BUCKET: ${{ secrets.CHANGELOG_AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.CHANGELOG_AWS_ACCESS_KEY_ID }}
