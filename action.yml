@@ -1,0 +1,9 @@
+name: "S3 cp file"
+description: "cp a file to an AWS S3 bucket"
+author: qoqa
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: green
