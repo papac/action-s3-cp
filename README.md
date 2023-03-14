@@ -28,9 +28,8 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'eu-west-1'
-          FROM: 'local'
           SOURCE: 'CHANGELOG.md'
-          DESTINATION: 's3://${{ secrets.AWS_S3_BUCKET }}/path/changelogs/CHANGELOG.android.md'
+          DESTINATION: '/path/changelogs/CHANGELOG.android.md'
 ```
 
 
@@ -38,7 +37,7 @@ jobs:
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `FROM` | Define the orientation of action between upload or download. If `local` we copy file form local to s3 and if is `s3` we download file from s3 to local | `env` | **Yes** |
+| `FROM` | Define the orientation of action between upload or download. If is set `local` we copy file from local to s3 and if is set `s3` we download file from s3 to local. The default value is `s3` | `env` | **Yes** |
 | `SOURCE` | The local or remote. | `env` | **Yes** |
 | `DESTINATION` | The local or remote. | `env` | **Yes** |
 | `AWS_REGION` | The region where you created your bucket in. For example, `eu-central-1`. [Full list of regions here.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions) | `env` | **Yes** |
