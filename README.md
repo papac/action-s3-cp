@@ -37,7 +37,7 @@ jobs:
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `FROM` | Define the orientation of action between upload or download. If is set `local` we copy file from local to s3 and if is set `s3` we download file from s3 to local. The default value is `s3` | `env` | **Yes** |
+| `FROM` | Define the orientation of action between upload or download. If is set `local` we copy file from local to s3 and if is set `s3` we download file from s3 to local. The default value is `s3` | `env` | **NO** |
 | `SOURCE` | The local or remote. | `env` | **Yes** |
 | `DESTINATION` | The local or remote. | `env` | **Yes** |
 | `AWS_REGION` | The region where you created your bucket in. For example, `eu-central-1`. [Full list of regions here.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions) | `env` | **Yes** |
