@@ -1,6 +1,6 @@
 name: "S3 cp file"
-description: "cp a file to an AWS S3 bucket"
-author: qoqa
+description: "Copy a local file to an S3 or from S3 Bucket to local"
+author: papac
 runs:
   using: docker
   image: Dockerfile
